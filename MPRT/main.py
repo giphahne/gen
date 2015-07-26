@@ -3,6 +3,8 @@
 from utils import utils
 #from functools import reduce
 
+import requests
+
 
 if __name__ == "__main__":
     
