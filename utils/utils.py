@@ -1,5 +1,72 @@
+from itertools import groupby
+
+import requests
 
 
+def ifasta_file(fasta_fd):
+    """
+    Yield tuples:
+        (<header>, <sequence>)
+    from fasta file.
+
+    Introduced for GC
+    """
+    fh = open(fasta_fd)
+    # ditch the boolean (x[0]) and just keep the header or sequence since
+    # we know they alternate.
+    faiter = (x[1] for x in groupby(fh, lambda line: line[0] == ">"))
+    for header in faiter:
+        # drop the ">"
+        header = next(header)[1:].strip()
+        # join all sequence lines to one.
+        seq = "".join(s.strip() for s in next(faiter))
+        yield header, seq
+
+
+def gc_con(seq):
+    """
+    Introduced for GC
+    """
+    return (seq.count("G") + seq.count("C")) / len(seq)
+
+
+def fetch_uniprot_record(prot_id):
+    """
+    Introduced for MPRT
+    """
+    prot_url = "http://www.uniprot.org/uniprot/{0}.fasta".format(prot_id)
+    prot_resp = requests.get(prot_url)
+    prot_fasta = prot_resp.content.decode().split("\n")
+
+    header = prot_fasta.pop(0)
+    prot_seq = "".join(prot_fasta)
+    #print("\nheader: ", header)
+    #print("\nseq: ", seq)
+
+    header = header.split(" ")
+    prot_id = header.pop(0).lstrip(">")
+    prot_desc = " ".join(header)
+
+    #print("prot_id: ", prot_id)
+    #print("prot_desc: ", prot_desc)
+    
+
+    #print(prot_resp.content)
+    
+    return {
+        "id": prot_id,
+        "desc": prot_desc,
+        "seq": prot_seq
+    }  
+    
+
+def find_motif(motif, seq):
+    """
+    Introduced for MPRT
+    """
+    pass
+
+    
 
 def load_codon_table(codon_table_file="utils/codon_table"):
     """
@@ -16,7 +83,6 @@ def load_codon_table(codon_table_file="utils/codon_table"):
 
     return codons
     
-
 
 def load_aa_mass_table(aa_mass_table_file="utils/aa_masses_table"):
     """
@@ -78,8 +144,6 @@ def binom_r(n, k):
     return mbinom_r(n - 1, k - 1) + mbinom_r(n - 1, k)
 
 
-
-
 def find_all(sub_str, a_str):
     """
     """
@@ -90,6 +154,10 @@ def find_all(sub_str, a_str):
             return
         yield start + 1
         start += 1
+
+        
+def find_all_regex():
+    pass
 
         
 def prob_of_hom_rec(homr, het, homd):
