@@ -13,8 +13,8 @@ if __name__ == "__main__":
 
     unit_name = "GRPH"
 
-    data_file_name = "sample_data"
-    #data_file_name = "rosalind_{0}.txt".format(unit_name.lower())
+    #data_file_name = "sample_data"
+    data_file_name = "rosalind_{0}.txt".format(unit_name.lower())
     output_file_name = "output"
 
     data_file = os.path.join(unit_name, data_file_name)
@@ -25,7 +25,7 @@ if __name__ == "__main__":
     tails = defaultdict(list)
 
     # overlap of 'k' nts:
-    k = 3
+    k = 5
     
     for seq_id, seq in utils.ifasta_file(data_file):
         tails[seq[-k:]].append(seq_id)
@@ -35,21 +35,16 @@ if __name__ == "__main__":
     print("\n\n")
     print(tails)
 
-        
-    
-    # with open(data_file, "r") as f:
-    #     s = f.read()
-    #print(s)
-
-    
     with open(output_file, "w") as f:
         
         for tail, ids in tails.items():
             print("\n", tail, ids)
             children = heads.get(tail, [])
             print("\t", children)
-            for child in children:
-                if child != 
+            for seq_id in ids:
+                for child in children:
+                    if child != seq_id:
+                        f.write("{0} {1}\n".format(seq_id, child))
         
     
     
