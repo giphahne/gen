@@ -47,7 +47,7 @@ if __name__ == "__main__":
         data_file_name = "rosalind_{0}.txt".format(unit_name.lower())
         
     output_file_name = "output"
-
+    
     print("unit_name:", unit_name)
     print("data_file_name:", data_file_name)
     data_file = os.path.join(unit_name, data_file_name)
@@ -58,20 +58,26 @@ if __name__ == "__main__":
     for seq_id, seq in utils.ifasta_file(data_file):
     #for seq_id, seq in utils.ifasta_file("CONS/rosalind_cons.txt"):
         seqs.append(seq)
-
+        
+    dseq = seqs[0]
+    
+    """
+    A better way to do this would be to cut the seq at 
+    all stop codons, and then parallelize the search for
+    open reading frame substrings, which will begin with
+    start codon, within each orf substring.
+    """
+    
+    
+    print("dseq:", dseq)
+    rseq = dseq.replace("T", "U")
+    print("rseq:", rseq)
     
 
-    cons_seq = ""
-    for prof in full_profs:
-        cons_seq += max(prof.items(), key=operator.itemgetter(1))[0]
+    for orf in utils.orfs_from_rseq(rseq):
+        print("orf:", orf)
     
     with open(output_file, "w") as f:
-        f.write(cons_seq)
-
-        for nt in sorted(nts_reduction):
-            f.write("\n" + nt + ":")
-
-            for prof in full_profs:
-                f.write(" " + str(prof[nt]))
+        f.write(" ")
             
             

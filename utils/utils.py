@@ -18,13 +18,13 @@ rna_comps = {
     "G": "C",
 }
 
-def rev_comp_base(nc, complements):
+def comp_base(nc, complements):
     """
     """
     return complements[nc]
 
-dna_rev_comp = partial(rev_comp_base, complements=dna_comps)
-rna_rev_comp = partial(rev_comp_base, complements=rna_comps)
+dna_comp = partial(comp_base, complements=dna_comps)
+rna_comp = partial(comp_base, complements=rna_comps)
 
 
 def ifasta_file(fasta_fd):
@@ -49,14 +49,25 @@ def ifasta_file(fasta_fd):
 
 def d2r(nt):
     """
-    General helper function
+    DNA to RNA general helper function.
     """
     if nt == "T":
         return "U"
     else:
         return nt
+
+    
+def id2r(nts):
+    """
+    iter DNA to RNA general helper function. 
+    """
+    for nt in nts:
+        if nt == "T":
+            yield "U"
+        else:
+            yield nt
         
-        
+
 def gc_con(seq):
     """
     Introduced for GC
@@ -133,12 +144,19 @@ def find_motif(motif, seq):
     """
     pass
 
-    
 
-def load_codon_table(codon_table_file="utils/codon_table"):
+def load_codon_tables(codon_table_file="utils/codon_table"):
     """
     """
     codons = {}
+    start_codons = {
+        "AUG": "M",
+    }
+    stop_codons = {
+        "UGA": "*",
+        "UAG": "*",
+        "UAA": "*",
+    }
     
     with open(codon_table_file, "r") as f:
         for line in f:
@@ -148,8 +166,14 @@ def load_codon_table(codon_table_file="utils/codon_table"):
                 codons[line[0]] = line[1]
                 #codons[line[1]] = line
 
-    return codons
+    return start_codons, stop_codons, codons
     
+    
+def load_codon_table(codon_table_file="utils/codon_table"):
+    """
+    """
+    return load_codon_tables(codon_table_file)[2]
+
 
 def load_aa_mass_table(aa_mass_table_file="utils/aa_masses_table"):
     """
@@ -167,17 +191,37 @@ def load_aa_mass_table(aa_mass_table_file="utils/aa_masses_table"):
     return masses
     
 
-def chunks(string, n):
+def ichunks(seq, n=3):
     """
+    Introduced for ORF
     """
-    for i in range(0, len(string), n):
-        print(string[i:i+n])
-        yield string[i:i+n]
+    seq = iter(seq)    
+    while True:
+        chunk = ''
+        for i in range(0, n):
+            chunk += next(seq)
+        yield chunk
     
-                
+
+def chunks(string, n=3):
+    """
+    """
+    i = 0
+    while True:
+        try:
+            string[i+n]
+        except IndexError as e:
+            raise StopIteration
+
+        print("chunk ({}):".format(i), string[i:i+n])
+        yield string[i:i+n]
+
+        i += n
+        
+        
 def binom_f(n, k):
     """
-    one of three binomial functions
+    one of three useless binomial functions
     """
     if n == k:
         return 1
@@ -196,7 +240,7 @@ def binom_f(n, k):
 
 def mbinom_r(n, k, memo={}):
     """
-    one of three binomial functions
+    one of three useless binomial functions
     """
     if (n, k) in memo:
         return memo[(n, k)]
@@ -212,7 +256,7 @@ def mbinom_r(n, k, memo={}):
 
 def binom_r(n, k):
     """
-    one of three binomial functions
+    one of three useless binomial functions
     """
     if n == k or k == 0:
         return 1
@@ -230,8 +274,32 @@ def find_all(sub_str, a_str):
         yield start + 1
         start += 1
 
+
+def orfs_from_rseq(stopped_seq, start_cod="AUG"):
+    """
+    Introduced for ORF
+    """
+    for start_cod_index in find_all(start_cod, stopped_seq):
+        yield stopped_seq[start_cod_index:]
+        
+        
+def find_all_multiple(sub_strs, a_str):
+    """
+    introduced for ORF
+    """
+    start = 0
+    while True:
+        start = min([a_str.find(substr, start) for substr in sub_strs])
+        if start == -1:
+            return
+        yield start + 1
+        start += 1        
+
         
 def find_all_regex():
+    """
+    """
+    start = 0
     pass
 
         
