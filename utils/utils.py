@@ -1,6 +1,30 @@
 from itertools import groupby
+from functools import partial
 
 import requests
+
+
+dna_comps = {
+    "A": "T",
+    "T": "A",
+    "C": "G",
+    "G": "C",
+}
+
+rna_comps = {
+    "A": "U",
+    "U": "A",
+    "C": "G",
+    "G": "C",
+}
+
+def rev_comp_base(nc, complements):
+    """
+    """
+    return complements[nc]
+
+dna_rev_comp = partial(rev_comp_base, complements=dna_comps)
+rna_rev_comp = partial(rev_comp_base, complements=rna_comps)
 
 
 def ifasta_file(fasta_fd):
@@ -23,11 +47,54 @@ def ifasta_file(fasta_fd):
         yield header, seq
 
 
+def d2r(nt):
+    """
+    General helper function
+    """
+    if nt == "T":
+        return "U"
+    else:
+        return nt
+        
+        
 def gc_con(seq):
     """
     Introduced for GC
     """
     return (seq.count("G") + seq.count("C")) / len(seq)
+
+
+def nts_profiler(*nts, nts_set=None):
+    """
+    Introduced for CONS
+    """
+    
+    print(nts)
+    profile_i = defaultdict(int)
+
+    if nts_set:
+        profile_i.update([(k, 0) for k in nts_set])
+    
+    for nt in nts:
+        profile_i[nt] += 1
+
+    print("profile_i:", profile_i)
+    #profile_i
+    #profile.append(curr_nts)
+
+    return profile_i
+
+
+def hamm_dist(s1, s2):
+    """
+    Introduced for HAMM
+    """
+    dist = 0
+    distbool = 0
+    for c1, c2 in zip(s1, s2):
+        distbool += bool( (c1 != c2) )
+
+    return distbool
 
 
 def fetch_uniprot_record(prot_id):
@@ -109,6 +176,9 @@ def chunks(string, n):
     
                 
 def binom_f(n, k):
+    """
+    one of three binomial functions
+    """
     if n == k:
         return 1
     elif k == 1:
@@ -125,7 +195,9 @@ def binom_f(n, k):
 
 
 def mbinom_r(n, k, memo={}):
-
+    """
+    one of three binomial functions
+    """
     if (n, k) in memo:
         return memo[(n, k)]
     
@@ -139,6 +211,9 @@ def mbinom_r(n, k, memo={}):
 
 
 def binom_r(n, k):
+    """
+    one of three binomial functions
+    """
     if n == k or k == 0:
         return 1
     return mbinom_r(n - 1, k - 1) + mbinom_r(n - 1, k)
@@ -162,6 +237,7 @@ def find_all_regex():
         
 def prob_of_hom_rec(homr, het, homd):
     """
+    probability of homogeneous recessive
     """
     tot = homr + het + homd
 

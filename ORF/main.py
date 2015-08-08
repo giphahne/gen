@@ -30,11 +30,10 @@ def nts_profiler(*nts, nts_set=None):
 
     return profile_i
 
-
-
     
 if __name__ == "__main__":
-    unit_name = os.path.dirname(os.path.realpath(__file__))
+    unit_path, file_name = os.path.split(os.path.realpath(__file__))
+    path_name, unit_name = os.path.split(unit_path)
     
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--sampledata", action="store_true",
@@ -49,30 +48,18 @@ if __name__ == "__main__":
         
     output_file_name = "output"
 
+    print("unit_name:", unit_name)
+    print("data_file_name:", data_file_name)
     data_file = os.path.join(unit_name, data_file_name)
     output_file = os.path.join(unit_name, output_file_name)
     print("data file:", data_file)
     
     seqs = []
-    #for seq_id, seq in utils.ifasta_file(data_file):
-    for seq_id, seq in utils.ifasta_file("CONS/rosalind_cons.txt"):
+    for seq_id, seq in utils.ifasta_file(data_file):
+    #for seq_id, seq in utils.ifasta_file("CONS/rosalind_cons.txt"):
         seqs.append(seq)
 
-    print("\n\n")
-    print(seqs)
-
-    profs = list(map(nts_profiler, *seqs))
-
-    nts_reduction = set()
-    for prof in profs:
-        nts_reduction.update(prof)
-
-    print(nts_reduction)
-
-    full_nts_profiler = partial(nts_profiler, nts_set=nts_reduction)
-    full_profs = list(map(full_nts_profiler, *seqs))
     
-    print("done", "\n\n", full_profs)    
 
     cons_seq = ""
     for prof in full_profs:
