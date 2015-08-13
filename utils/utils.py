@@ -213,7 +213,7 @@ def chunks(string, n=3):
         except IndexError as e:
             raise StopIteration
 
-        print("chunk ({}):".format(i), string[i:i+n])
+        #print("chunk ({}):".format(i), string[i:i+n])
         yield string[i:i+n]
 
         i += n
@@ -275,13 +275,30 @@ def find_all(sub_str, a_str):
         start += 1
 
 
-def orfs_from_rseq(stopped_seq, start_cod="AUG"):
+def orfs_from_rseq(trailing_seq, start_cod="AUG"):
     """
     Introduced for ORF
     """
-    for start_cod_index in find_all(start_cod, stopped_seq):
-        yield stopped_seq[start_cod_index:]
+    for start_cod_index in find_all(start_cod, trailing_seq):
+        yield trailing_seq[start_cod_index-1:]
+
+
+def prots_from_trailing_rseqs(trailing_seqs, stop_codons, codons):
+    """
+    Introduced for ORF
+    """
+
+    terminated = False
+    
+    for trailing_seq in trailing_seqs:
         
+        prot = ""
+        for chunk in chunks(trailing_seq):
+            if chunk in stop_codons:
+                yield prot
+                break
+            prot += codons[chunk]
+
         
 def find_all_multiple(sub_strs, a_str):
     """
@@ -312,3 +329,34 @@ def prob_of_hom_rec(homr, het, homd):
     return ( ((homr * homr) - homr + (homr * het) + (het * het)/4 - het/4 )/
                              ((tot * tot) - tot) ) 
         
+
+def rev_comp(seq, rna=True):
+    """
+    Introduced for ORF
+    """
+    dna_comps = {
+        "A": "T",
+        "T": "A",
+        "C": "G",
+        "G": "C",
+    }
+    rna_comps = {
+        "A": "U",
+        "U": "A",
+        "C": "G",
+        "G": "C",
+    }
+
+    comps = rna_comps
+    if not rna:
+        comps = dna_comps 
+    
+    # def comp(nc):
+    #     if nc == "\n":
+    #         return ""
+    #     return comps[nc]
+
+    comp_seq = ""
+    for nc in seq:
+        comp_seq += comps[nc]
+    return comp_seq[::-1]

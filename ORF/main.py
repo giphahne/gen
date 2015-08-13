@@ -1,12 +1,14 @@
-#import json
-#import math
-#from functools import reduce
-import re
 import os
-from collections import defaultdict
+#import math
+import re
+from itertools import chain
 from functools import partial
-import argparse
+#from functools import reduce
+from collections import defaultdict
 import operator
+import argparse
+#import json
+
     
 from utils import utils
 #from utils import fetch_uniprot_record
@@ -59,25 +61,44 @@ if __name__ == "__main__":
     #for seq_id, seq in utils.ifasta_file("CONS/rosalind_cons.txt"):
         seqs.append(seq)
         
-    dseq = seqs[0]
+    dna_seq = seqs[0]
     
     """
-    A better way to do this would be to cut the seq at 
+    A better way to do this would be to 'cut' the seq at 
     all stop codons, and then parallelize the search for
     open reading frame substrings, which will begin with
-    start codon, within each orf substring.
+    start codon, within each ORF substring. (by 'cut' it
+    would be better to use indexes and iterators.)
     """
     
     
-    print("dseq:", dseq)
-    rseq = dseq.replace("T", "U")
-    print("rseq:", rseq)
-    
+    print("\ndna_seq:", dna_seq)
+    rna_seq = dna_seq.replace("T", "U")
+    print("\nrna_seq:", rna_seq)
+    print("seq len: {0}\n".format(len(seq)))
 
-    for orf in utils.orfs_from_rseq(rseq):
-        print("orf:", orf)
+    start_codons, stop_codons, codons = utils.load_codon_tables()
+
+    # for stop_codon in stop_codons.keys():
+    #     print("replacing {0}".format(stop_codon))
+    #     rna_seq = rna_seq.replace(stop_codon, "*")
+    #     print("rna_seq:", rna_seq)
+
+
+    #prot_function
+    prots = chain(
+        utils.prots_from_trailing_rseqs(utils.orfs_from_rseq(rna_seq),
+                                        stop_codons, codons),
+        utils.prots_from_trailing_rseqs(
+            utils.orfs_from_rseq(utils.rev_comp(rna_seq)),
+            stop_codons, codons)
+    )
+
+    prots = set(prots)
+        
     
     with open(output_file, "w") as f:
-        f.write(" ")
+        for prot in prots:
+            f.write(prot + "\n")
             
             
