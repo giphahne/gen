@@ -283,7 +283,9 @@ def orfs_from_rseq(trailing_seq, start_cod="AUG"):
         yield trailing_seq[start_cod_index-1:]
 
 
-def prots_from_trailing_rseqs(trailing_seqs, stop_codons, codons):
+def prots_from_trailing_rseqs(trailing_seqs,
+                              stop_codons=load_codon_tables()[1],
+                              codons=load_codon_table()):
     """
     Introduced for ORF
     """
@@ -298,6 +300,7 @@ def prots_from_trailing_rseqs(trailing_seqs, stop_codons, codons):
                 yield prot
                 break
             prot += codons[chunk]
+        yield prot
 
         
 def find_all_multiple(sub_strs, a_str):
