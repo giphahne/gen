@@ -363,3 +363,43 @@ def rev_comp(seq, rna=True):
     for nc in seq:
         comp_seq += comps[nc]
     return comp_seq[::-1]
+
+
+
+def longest_common_substr(A, B):
+    """
+    Introduced for LCSM
+    """
+    L = [[0 for i in range(len(B))] for i in range(len(A))]
+    z = 0
+    ret = {}
+
+    print("A:", A)
+    print("len(A):", len(A))
+
+    print("B:", B)
+    print("len(B):", len(B))    
+    
+    for i in range(len(A)):
+        for j in range(len(B)):
+            print("(i,j):", (i,j))
+
+            if A[i] == B[j]:
+
+                if i == 0 or j == 0:
+                    L[i][j] = 1
+                else:
+                    L[i][j] = L[i-1][j-1] + 1
+
+                if L[i][j] > z:
+                    z = L[i][j]
+                    ret = {A[i-z+1:i]}
+                else:
+                    if L[i][j] == z:                    
+                        ret = ret | {A[i-z+1:i]}
+
+            else:
+                L[i][j] = 0
+
+    print(L)
+    return ret
