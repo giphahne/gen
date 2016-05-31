@@ -1,3 +1,4 @@
+import sys
 import os
 #import math
 import re
@@ -9,7 +10,7 @@ import operator
 import argparse
 #import json
 
-    
+sys.path.append("/Users/dhahne/Development/rosalind/")
 from utils.utils import *
 
     
@@ -31,50 +32,46 @@ if __name__ == "__main__":
     output_file_name = "output"
     
     print("unit_name:", unit_name)
-    print("data_file_name:", data_file_name)
+    #print("data_file_name:", data_file_name)
     data_file = os.path.join(unit_name, data_file_name)
     output_file = os.path.join(unit_name, output_file_name)
     print("data file:", data_file)
+    print("\n\n")
 
     ####################################################################
     
     
     
-    seqs = ifasta_file(data_file)
+    seqs = list(ifasta_file(data_file, with_headers=False))
+    n = len(seqs)
+    #print("seqs:", seqs)
+    #for seq_id, seq in seqs:
+    #z = 0
+    lcsm = ""
+    for i in range(n):
+        for j in range(i, n):
+            #print("\n**********\n")
+            ith_lcsm = longest_common_substr(seqs[i], seqs[j],
+                                             just_one=True)
+            # ith_lcsm = longest_common_substr(seqs[i], seqs[j],
+            #                                  just_one=False)
+            # print("\n"            
+            #       "common-ing: \n"
+            #       "{0}\n"
+            #       "{1}\n"
+            #       "ith_lcsm: {2}"
+            #       .format(seqs[i], seqs[j], ith_lcsm))
 
-    seq = next(seqs)[1]
-    introns = list(seqs) 
-    #for seq_id, seq in ifasta_file("CONS/rosalind_cons.txt"):
-    #seqs.append(seq)
+            if len(ith_lcsm) > len(lcsm) and in_all(ith_lcsm, seqs):
+                # print("ith is longer than current: {0} > {1}"
+                #       .format(ith_lcsm, lcsm))
+                lcsm = ith_lcsm
+        #print("seq: {0}".format(seqs[i]))
+    print("lcsm:", lcsm)
 
-    print("\nseq: {0}\n"
-          "introns: {1}\n\n".format(seq, len(introns)))
-    for intron in introns:
-        intron = intron[1]
-        print(seq)        
-        index = seq.find(intron)
-        print(" "*(index-1), intron)
-        seq = seq[:index] + seq[index+len(intron):]
-
-    coding_region = seq
-    print(coding_region, "\ncoding_region ^ \n")
-
-
-    rna_coding_region = list(orfs_from_rseq("".join(list(id2r(coding_region)))))[0]
-    print("rna_coding_region:", rna_coding_region)
-    prots = prots_from_trailing_rseqs([rna_coding_region])
-    poly_peptide = ""
-    for prot in prots:
-        poly_peptide += prot
-    print("\n\n", poly_peptide, "\n\n")
-    
-
-    
-        
-        
-
-    
     with open(output_file, "w") as f:
         f.write("\n")
+        f.write(lcsm)
+        f.write("\n")
             
-            
+    print("\n\n")            

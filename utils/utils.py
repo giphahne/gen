@@ -27,7 +27,7 @@ dna_comp = partial(comp_base, complements=dna_comps)
 rna_comp = partial(comp_base, complements=rna_comps)
 
 
-def ifasta_file(fasta_fd):
+def ifasta_file(fasta_fd, with_headers=True):
     """
     Yield tuples:
         (<header>, <sequence>)
@@ -44,7 +44,10 @@ def ifasta_file(fasta_fd):
         header = next(header)[1:].strip()
         # join all sequence lines to one.
         seq = "".join(s.strip() for s in next(faiter))
-        yield header, seq
+        if with_headers:
+            yield header, seq
+        else:
+            yield seq
 
 
 def d2r(nt):
@@ -366,7 +369,17 @@ def rev_comp(seq, rna=True):
 
 
 
-def longest_common_substr(A, B):
+def in_all(subseq, seqs):
+    """
+    Introduced for LCSM
+    """
+    for seq in seqs:
+        if not subseq in seq:
+            return False
+    return True
+
+
+def longest_common_substr(A, B, just_one=False):
     """
     Introduced for LCSM
     """
@@ -374,15 +387,15 @@ def longest_common_substr(A, B):
     z = 0
     ret = {}
 
-    print("A:", A)
-    print("len(A):", len(A))
+    # print("A:", A)
+    # print("len(A):", len(A))
 
-    print("B:", B)
-    print("len(B):", len(B))    
+    # print("B:", B)
+    # print("len(B):", len(B))    
     
     for i in range(len(A)):
         for j in range(len(B)):
-            print("(i,j):", (i,j))
+#            print("(i,j):", (i,j))
 
             if A[i] == B[j]:
 
@@ -393,13 +406,16 @@ def longest_common_substr(A, B):
 
                 if L[i][j] > z:
                     z = L[i][j]
-                    ret = {A[i-z+1:i]}
+                    ret = {A[i-z+1:i+1]}
                 else:
                     if L[i][j] == z:                    
-                        ret = ret | {A[i-z+1:i]}
+                        ret = ret | {A[i-z+1:i+1]}
 
             else:
                 L[i][j] = 0
 
-    print(L)
-    return ret
+    #print("ret:", ret)
+    if just_one:
+        return ret.pop()
+    else:
+        return ret
