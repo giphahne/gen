@@ -1,4 +1,4 @@
 # Bioinformatics
 
-Mostly focused on [http://rosalind.info](rosalind.info).
+Mostly focused on [rosalind.info](http://rosalind.info).
 
