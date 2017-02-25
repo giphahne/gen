@@ -29,8 +29,8 @@ casper.start(login_url, function() {
 	//console.log("found login form...");
 	
 	this.fill('form#id_form_login', {
-        username: 'giphahneapi',
-        password: 'g9G-s6U-ebt-tv5'
+        username: casper.cli.get("u"),
+        password: casper.cli.get("p"),
     }, true);
 
 });

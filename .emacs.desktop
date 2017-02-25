@@ -2,12 +2,12 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sat Feb 25 15:24:11 2017
+;; Created Sat Feb 25 15:46:38 2017
 ;; Desktop file format version 206
 ;; Emacs version 25.1.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (22705 59371 600670 0) (desktop . "208") "dhahne@dhahne527497.local" nil nil ((((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-10-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 11) (right-fringe . 13) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display . "dhahne527497.local") (display-type . color) (background-mode . dark) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (cursor-color . "green") (visibility) (tty-type . "xterm-256color") (tty . "/dev/tty") (modeline . t) (unsplittable) (frameset--id . "3684-FB2D-0B79-A1D3") (frameset--mini t) (minibuffer . t) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (height . 31) (width . 112) (left . 0) (top . 22)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 44) (min-pixel-width . 60) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 11) (min-pixel-width-safe . 12)) leaf (pixel-width . 696) (pixel-height . 330) (total-width . 116) (total-height . 30) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected) (hscroll . 0) (fringes 11 13 nil) (margins nil) (scroll-bars 0 0 nil nil 0 nil) (vscroll . 0) (dedicated) (point . 514) (start . 1))) (((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars . t) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "green") (environment) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (display . "dhahne527497.local") (visibility . t) (frameset--id . "5A2B-874A-757A-0138") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (fringe) (height . 101) (width . 177) (left + -1260) (top + -638)) ((min-height . 8) (min-width . 20) (min-height-ignore . 8) (min-width-ignore . 10) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 112) (min-pixel-width . 140) (min-pixel-height-ignore . 112) (min-pixel-width-ignore . 70) (min-pixel-height-safe . 28) (min-pixel-width-safe . 28)) hc (pixel-width . 1255) (pixel-height . 1400) (total-width . 179) (total-height . 100) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 625) (pixel-height . 1400) (total-width . 89) (total-height . 100) (normal-height . 1.0) (normal-width . 0.5) (buffer "__main__.py" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 296) (start . 1))) (vc (last . t) (pixel-width . 630) (pixel-height . 1400) (total-width . 90) (total-height . 100) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 630) (pixel-height . 616) (total-width . 90) (total-height . 44) (normal-height . 0.44540853217642806) (normal-width . 1.0) (buffer "fetch_dataset.js" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1312) (start . 463))) (leaf (last . t) (pixel-width . 630) (pixel-height . 784) (total-width . 90) (total-height . 56) (normal-height . 0.5545914678235717) (normal-width . 1.0) (buffer "upload_answer.js" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1076) (start . 82))))))])
+(setq desktop-saved-frameset [frameset 1 (22705 60718 85547 0) (desktop . "208") "dhahne@dhahne527497.local" nil nil ((((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-10-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 11) (right-fringe . 13) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display . "dhahne527497.local") (display-type . color) (background-mode . dark) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (cursor-color . "green") (visibility) (tty-type . "xterm-256color") (tty . "/dev/tty") (modeline . t) (unsplittable) (frameset--id . "3684-FB2D-0B79-A1D3") (frameset--mini t) (minibuffer . t) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (height . 31) (width . 112) (left . 0) (top . 22)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 44) (min-pixel-width . 60) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 11) (min-pixel-width-safe . 12)) leaf (pixel-width . 696) (pixel-height . 330) (total-width . 116) (total-height . 30) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected) (hscroll . 0) (fringes 11 13 nil) (margins nil) (scroll-bars 0 0 nil nil 0 nil) (vscroll . 0) (dedicated) (point . 514) (start . 1))) (((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars . t) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "green") (environment) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (display . "dhahne527497.local") (visibility . t) (frameset--id . "5A2B-874A-757A-0138") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (fringe) (height . 101) (width . 177) (left + -1260) (top + -638)) ((min-height . 8) (min-width . 20) (min-height-ignore . 8) (min-width-ignore . 10) (min-height-safe . 2) (min-width-safe . 4) (min-pixel-height . 112) (min-pixel-width . 140) (min-pixel-height-ignore . 112) (min-pixel-width-ignore . 70) (min-pixel-height-safe . 28) (min-pixel-width-safe . 28)) hc (pixel-width . 1255) (pixel-height . 1400) (total-width . 179) (total-height . 100) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 625) (pixel-height . 1400) (total-width . 89) (total-height . 100) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 625) (pixel-height . 700) (total-width . 89) (total-height . 50) (normal-height . 0.5) (normal-width . 1.0) (buffer "__main__.py" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 2338) (start . 1387))) (leaf (last . t) (pixel-width . 625) (pixel-height . 700) (total-width . 89) (total-height . 50) (normal-height . 0.5) (normal-width . 1.0) (buffer "__main__.py" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 301) (start . 1)))) (vc (last . t) (pixel-width . 630) (pixel-height . 1400) (total-width . 90) (total-height . 100) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 630) (pixel-height . 752) (total-width . 90) (total-height . 54) (normal-height . 0.5252747252747251) (normal-width . 1.0) (buffer "fetch_dataset.js" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 954) (start . 463))) (leaf (last . t) (pixel-width . 630) (pixel-height . 648) (total-width . 90) (total-height . 46) (normal-height . 0.4747252747252747) (normal-width . 1.0) (buffer "upload_answer.js" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 800) (start . 1))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
@@ -18,12 +18,34 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
+  "/Users/dhahne/Development/rosalind/utils/fetch_dataset.js"
+  "fetch_dataset.js"
+  'js-mode
+  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode buffer-face-mode)
+  954
+  '(307 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
+  "/Users/dhahne/Development/rosalind/utils/upload_answer.js"
+  "upload_answer.js"
+  'js-mode
+  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode buffer-face-mode)
+  800
+  '(1000 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
+
+(desktop-create-buffer 206
   "/Users/dhahne/Development/rosalind/LCSM/__main__.py"
   "__main__.py"
   'python-mode
   '(auto-complete-mode smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  296
-  '(2386 nil)
+  2338
+  '(2382 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
@@ -39,7 +61,7 @@
   nil
   '((tab-width . 4) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
 
-(desktop-create-buffer 206
+(desktop-append-buffer-args 206
   "/Users/dhahne/Development/ClimateMonitor/pianoclimate/README.md"
   "README.md"
   'markdown-mode
@@ -50,35 +72,13 @@
   nil
   '((tab-width . 4) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
 
-(desktop-create-buffer 206
+(desktop-append-buffer-args 206
   "/Users/dhahne/Development/rosalind/LCSM/sample_data"
   "sample_data"
   'fundamental-mode
   '(smooth-scroll-mode global-auto-revert-mode)
   58
   '(58 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/fetch_dataset.js"
-  "fetch_dataset.js"
-  'js-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode buffer-face-mode)
-  1312
-  '(307 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/upload_answer.js"
-  "upload_answer.js"
-  'js-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode buffer-face-mode)
-  1076
-  '(1000 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))

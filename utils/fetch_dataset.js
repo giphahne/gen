@@ -26,12 +26,14 @@ casper.start(login_url, function() {
 	
 	//this.test.assertExists('form#id_form_login', 'form is found');
 	//console.log("found login form...");
+	//console.log(casper.cli.get("u"));
+	//console.log(casper.cli.get("p"));
 	
 	this.fill('form#id_form_login', {
-        username: 'giphahneapi',
-        password: 'g9G-s6U-ebt-tv5'
+        username: casper.cli.get("u"),
+        password: casper.cli.get("p"),
     }, true);
-
+	
 });
 
 var problem_page_url = url + 'problems/' + casper.cli.args[0] + '/';
@@ -39,10 +41,14 @@ casper.thenOpen(problem_page_url, function() {
 	//console.log("loaded problem page: " + casper.cli.args[0]);
 	//console.log("Problem Name: " + this.getTitle());
 
+	var d = new Date();
+	var seconds = Math.round(d.getTime() / 1000);
+	var dataset_filename = casper.cli.args[0] + '_' + seconds + '.txt'
 	this.download(
 		url + 'problems/' + casper.cli.args[0] + '/dataset/',
-		'rosalind_dna_api.txt'
+		dataset_filename
 	);
+	console.log(dataset_filename);
 });
 
 casper.run();
