@@ -40,8 +40,7 @@ if __name__ == "__main__":
 
     ####################################################################
     
-    
-    
+     
     seqs = list(ifasta_file(data_file, with_headers=False))
     n = len(seqs)
     #print("seqs:", seqs)
