@@ -1,22 +1,12 @@
-
-
-
 var casper = require('casper').create({   
-    verbose: true, 
-    logLevel: 'debug',
+	verbose: false, 
+	logLevel: 'info',
     pageSettings: {
-		
-		// The WebPage instance used by Casper will
         loadImages:  false,
-		
-		// use these settings
         loadPlugins: true,         
-
 		userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_5) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4'
-		
     }
 });
-
 
 // print out all the messages in the headless browser context
 casper.on('remote.message', function(msg) {
@@ -29,10 +19,10 @@ casper.on("page.error", function(msg, trace) {
 });
 
 
-
-var login_url = 'http://rosalind.info/accounts/login/';
+var url = 'http://rosalind.info/';
+var login_url = url + 'accounts/login/';
 casper.start(login_url, function() {
-	console.log("page loaded");
+	//console.log("page loaded");
 	
 	//this.test.assertExists('form#id_form_login', 'form is found');
 	//console.log("found login form...");
@@ -42,15 +32,20 @@ casper.start(login_url, function() {
         password: 'g9G-s6U-ebt-tv5'
     }, true);
 
-	console.log("logged in...?")
 });
 
-
-var problem_page_url = 'http://rosalind.info/problems/' + casper.cli.args[0] + '/';
-
+var problem_page_url = url + 'problems/' + casper.cli.args[0] + '/';
 casper.thenOpen(problem_page_url, function() {
-	console.log("loaded problem page: " + casper.cli.args[0]);
-	console.log("Problem Name: " + document.querySelector('h1').textContent); 
+	//console.log("loaded problem page: " + casper.cli.args[0]);
+	//console.log("Problem Name: " + this.getTitle());
+
+	this.download(
+		url + 'problems/' + casper.cli.args[0] + '/dataset/',
+		'rosalind_dna_api.txt'
+	);
 });
 
 casper.run();
+
+
+
