@@ -10,7 +10,7 @@ import operator
 import argparse
 #import json
 
-sys.path.append("/Users/dhahne/Development/rosalind/")
+#sys.path.append("/Users/dhahne/Development/rosalind/")
 from utils.utils import *
 
     

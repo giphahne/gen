@@ -35,7 +35,6 @@ casper.start(login_url, function() {
 
 });
 
-
 var problem_page_url = url + 'problems/' + casper.cli.args[0] + '/';
 casper.thenOpen(problem_page_url, function() {
 	console.log("loaded problem page: " + casper.cli.args[0]);

@@ -1,16 +1,24 @@
-import json 
-from collections import defaultdict
+# import json 
+# from collections import defaultdict
+
+# def main(inf):
+    
+#     # dataset_file = "rosalind_dna.txt"
+#     # with open(dataset_file, 'r') as f:
+#     #     f_string = f.read()
 
 
-dataset_file = "rosalind_dna.txt"
-with open(dataset_file, 'r') as f:
-    f_string = f.read()
+#     print("reading dataset file...")
+#     f_string = inf.read()
+#     print("done.")
+    
+#     counts = defaultdict(int)
+#     for nuc in f_string:
+#         counts[nuc] += 1
 
+#     counts.pop("\n", None)
 
-counts = defaultdict(int)
-for nuc in f_string:
-    counts[nuc] += 1
+#     output_string = " ".join(*sorted(counts.values()))
 
-counts.pop("\n", None)
-
-print(json.dumps(counts, indent=4, sort_keys=True))
+#     return output_string
+#     #outf.write(output_string)

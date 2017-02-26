@@ -43,7 +43,7 @@ casper.thenOpen(problem_page_url, function() {
 
 	var d = new Date();
 	var seconds = Math.round(d.getTime() / 1000);
-	var dataset_filename = casper.cli.args[0] + '_' + seconds + '.txt'
+	var dataset_filename = casper.cli.args[0] + '_' + seconds;
 	this.download(
 		url + 'problems/' + casper.cli.args[0] + '/dataset/',
 		dataset_filename
