@@ -63,18 +63,17 @@ def prob_off_hom_rec(homr, het, homd):
                              ((tot * tot) - tot) ) 
         
 
-if __name__ == "__main__":
+def main(f):
     
-    #dataset_file = "sample_data"
-    dataset_file = "rosalind_iprb.txt"
-    
-    with open(dataset_file, "r") as f:
-        s = f.readline().strip().split()
+    s = f.readline().strip().split()
 
     print(s)
     prob = prob_off_hom_rec(int(s[2]), int(s[1]), int(s[0])) 
-    print(prob, 1 - prob)
-    
+    full_result = "{} {}".format(prob, 1 - prob)
+    result = "{}".format(1 - prob)
+    print(full_result)
+    return result
+
     # print(binom_r(6, 2))
     # print(mbinom_r(6, 2))
     # print(binom_f(6, 2))

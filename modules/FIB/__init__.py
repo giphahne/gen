@@ -1,9 +1,3 @@
-import json 
-#from collections import defaultdict
-
-#dataset_file = "sample_data"
-dataset_file = "rosalind_fib.txt"
-
 
 memo={}
 def G(n, k, b=1):
@@ -23,16 +17,12 @@ def G(n, k, b=1):
     return result
 
 
+def main(inf):
 
+    s = inf.read()
 
-
-
-with open(dataset_file, 'r') as f:
-    s = f.read()
-
-print(s)
-n, k = s.split(" ")
-print( G(int(n), int(k)) )
+    n, k = s.split(" ")
+    return str(G(int(n), int(k)))
 
 
     
