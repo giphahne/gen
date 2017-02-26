@@ -148,7 +148,7 @@ def find_motif(motif, seq):
     pass
 
 
-def load_codon_tables(codon_table_file="utils/codon_table"):
+def load_codon_tables(codon_table_file="rosalind_utils/codon_table"):
     """
     """
     codons = {}
@@ -172,13 +172,13 @@ def load_codon_tables(codon_table_file="utils/codon_table"):
     return start_codons, stop_codons, codons
     
     
-def load_codon_table(codon_table_file="utils/codon_table"):
+def load_codon_table(codon_table_file="rosalind_utils/codon_table"):
     """
     """
     return load_codon_tables(codon_table_file)[2]
 
 
-def load_aa_mass_table(aa_mass_table_file="utils/aa_masses_table"):
+def load_aa_mass_table(aa_mass_table_file="rosalind_utils/aa_masses_table"):
     """
     """
     masses = {}

@@ -2,237 +2,83 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Feb 26 14:39:46 2017
+;; Created Sun Feb 26 15:49:32 2017
 ;; Desktop file format version 206
 ;; Emacs version 25.1.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (22707 12034 386560 0) (desktop . "208") "dhahne@dhahne527497.local" nil nil ((((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-10-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 11) (right-fringe . 13) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display . "dhahne527497.local") (display-type . color) (background-mode . dark) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (cursor-color . "green") (visibility) (tty-type . "xterm-256color") (tty . "/dev/tty") (modeline . t) (unsplittable) (frameset--id . "3684-FB2D-0B79-A1D3") (frameset--mini t) (minibuffer . t) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (height . 31) (width . 112) (left . 0) (top . 22)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 44) (min-pixel-width . 60) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 11) (min-pixel-width-safe . 12)) leaf (pixel-width . 696) (pixel-height . 330) (total-width . 116) (total-height . 30) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected) (hscroll . 0) (fringes 11 13 nil) (margins nil) (scroll-bars 0 0 nil nil 0 nil) (vscroll . 0) (dedicated) (point . 514) (start . 1))) (((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars . t) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "green") (environment) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (display . "dhahne527497.local") (visibility . t) (frameset--id . "5A2B-874A-757A-0138") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (fringe) (height . 131) (width . 187) (left + -1330) (top + -1058)) ((min-height . 16) (min-width . 20) (min-height-ignore . 16) (min-width-ignore . 10) (min-height-safe . 4) (min-width-safe . 4) (min-pixel-height . 224) (min-pixel-width . 140) (min-pixel-height-ignore . 224) (min-pixel-width-ignore . 70) (min-pixel-height-safe . 56) (min-pixel-width-safe . 28)) hc (pixel-width . 1325) (pixel-height . 1820) (total-width . 189) (total-height . 130) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 660) (pixel-height . 1820) (total-width . 94) (total-height . 130) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 660) (pixel-height . 715) (total-width . 94) (total-height . 51) (normal-height . 0.39267767408470927) (normal-width . 1.0) (buffer "run_module.py" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 480) (start . 1))) (leaf (pixel-width . 660) (pixel-height . 396) (total-width . 94) (total-height . 28) (normal-height . 0.21516245487364621) (normal-width . 1.0) (buffer "fetch_data.sh" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 180) (start . 1))) (leaf (pixel-width . 660) (pixel-height . 352) (total-width . 94) (total-height . 25) (normal-height . 0.1917024320457797) (normal-width . 1.0) (buffer "run_module.sh" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 74) (start . 2))) (leaf (last . t) (pixel-width . 660) (pixel-height . 357) (total-width . 94) (total-height . 26) (normal-height . 0.2004574389958647) (normal-width . 1.0) (buffer "upload_output.sh" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 86) (start . 1)))) (vc (last . t) (pixel-width . 665) (pixel-height . 1820) (total-width . 95) (total-height . 130) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 665) (pixel-height . 917) (total-width . 95) (total-height . 66) (normal-height . 0.5026679518531074) (normal-width . 1.0) (buffer "__init__.py<IPRB>" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1482) (start . 390))) (leaf (pixel-width . 665) (pixel-height . 409) (total-width . 95) (total-height . 29) (normal-height . 0.22231404958677686) (normal-width . 1.0) (buffer "__init__.py<DNA>" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 325) (start . 1))) (leaf (last . t) (pixel-width . 665) (pixel-height . 494) (total-width . 95) (total-height . 35) (normal-height . 0.2750179985601152) (normal-width . 1.0) (buffer "upload_answer.js" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 372) (start . 1))))))])
+(setq desktop-saved-frameset [frameset 1 (22707 16220 105867 0) (desktop . "208") "dhahne@dhahne527497.local" nil nil ((((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-10-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 11) (right-fringe . 13) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display . "dhahne527497.local") (display-type . color) (background-mode . dark) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (cursor-color . "green") (visibility) (tty-type . "xterm-256color") (tty . "/dev/tty") (modeline . t) (unsplittable) (frameset--id . "3684-FB2D-0B79-A1D3") (frameset--mini t) (minibuffer . t) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (height . 31) (width . 112) (left . 0) (top . 22)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 44) (min-pixel-width . 60) (min-pixel-height-ignore . 44) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 11) (min-pixel-width-safe . 12)) leaf (pixel-width . 696) (pixel-height . 330) (total-width . 116) (total-height . 30) (normal-height . 1.0) (normal-width . 1.0) (buffer "*Messages*" (selected) (hscroll . 0) (fringes 11 13 nil) (margins nil) (scroll-bars 0 0 nil nil 0 nil) (vscroll . 0) (dedicated) (point . 514) (start . 1))) (((font-backend mac-ct) (fontsize . 0) (font . "-*-Menlo-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1") (border-width . 0) (internal-border-width . 2) (vertical-scroll-bars) (horizontal-scroll-bars . t) (foreground-color . "#56D1D3") (background-color . "#20202F") (line-spacing) (left-fringe . 8) (right-fringe . 8) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (icon-type) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "green") (environment) (scroll-bar-background . "gray27") (scroll-bar-foreground . "black") (display . "dhahne527497.local") (visibility . t) (frameset--id . "5A2B-874A-757A-0138") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (right-divider-width . 0) (bottom-divider-width . 0) (icon-name) (explicit-name) (tool-bar-position . top) (fringe) (height . 131) (width . 187) (left + -1330) (top + -1058)) ((min-height . 16) (min-width . 20) (min-height-ignore . 16) (min-width-ignore . 10) (min-height-safe . 4) (min-width-safe . 4) (min-pixel-height . 224) (min-pixel-width . 140) (min-pixel-height-ignore . 224) (min-pixel-width-ignore . 70) (min-pixel-height-safe . 56) (min-pixel-width-safe . 28)) hc (pixel-width . 1325) (pixel-height . 1820) (total-width . 189) (total-height . 130) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (vc (pixel-width . 660) (pixel-height . 1820) (total-width . 94) (total-height . 130) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 660) (pixel-height . 991) (total-width . 94) (total-height . 71) (normal-height . 0.5426996799997559) (normal-width . 1.0) (buffer "run_module.py" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 32) (start . 1))) (leaf (pixel-width . 660) (pixel-height . 296) (total-width . 94) (total-height . 21) (normal-height . 0.16290588882773804) (normal-width . 1.0) (buffer "fetch_data.sh" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 346) (start . 1))) (leaf (pixel-width . 660) (pixel-height . 328) (total-width . 94) (total-height . 23) (normal-height . 0.18163315504489314) (normal-width . 1.0) (buffer "run_module.sh" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 253) (start . 1))) (leaf (last . t) (pixel-width . 660) (pixel-height . 205) (total-width . 94) (total-height . 15) (normal-height . 0.11276127612761276) (normal-width . 1.0) (buffer "upload_output.sh" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1) (start . 1)))) (vc (last . t) (pixel-width . 665) (pixel-height . 1820) (total-width . 95) (total-height . 130) (normal-height . 1.0) (normal-width . 0.5) (combination-limit) (leaf (pixel-width . 665) (pixel-height . 917) (total-width . 95) (total-height . 66) (normal-height . 0.5026679518531074) (normal-width . 1.0) (buffer "__init__.py" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1223) (start . 1))) (leaf (pixel-width . 665) (pixel-height . 481) (total-width . 95) (total-height . 34) (normal-height . 0.2644310060472787) (normal-width . 1.0) (buffer "utils.py" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 3514) (start . 3075))) (leaf (last . t) (pixel-width . 665) (pixel-height . 422) (total-width . 95) (total-height . 30) (normal-height . 0.23290104209961338) (normal-width . 1.0) (buffer "fetch_data.sh" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 nil) (vscroll . 0) (dedicated) (point . 1) (start . 1))))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("json" "ret" "TGGAAACAG" "AAAACCCGTGCA" "GGGGAGG" "ifasta" "hidden" "find_all" "ifasta" "utils" "chunks" "id2r" "A" "load_c" "from_" "chunk"))
+(setq search-ring '("codon_table" "rosa" "load" "chunks" "load" "json" "ret" "TGGAAACAG" "AAAACCCGTGCA" "GGGGAGG" "ifasta" "hidden" "find_all" "ifasta" "utils" "chunks"))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("/Users/dhahne/Development/rosalind/modules/IPRB/__init__.py" "/Users/dhahne/Development/rosalind/modules/HAMM/__init__.py" "/Users/dhahne/Development/rosalind/modules/GC/__init__.py" "/Users/dhahne/Development/rosalind/modules/FIB/__init__.py" "/Users/dhahne/Development/rosalind/modules/done/FIB/main.py" "/Users/dhahne/Development/rosalind/modules/REVC/__init__.py" "~/Development/rosalind/utils/set_rosalind_api_parameters.sh" "/Users/dhahne/Development/rosalind/modules/RNA/__init__.py" "~/Development/rosalind/upload_output.sh" "/Users/dhahne/Development/sandbox/sandboxenv3/lib/python3.5/site-packages/awscli/__init__.py" "/Users/dhahne/Development/rosalind/modules/DNA/__init__.py" "/Users/dhahne/Development/rosalind/modules/DNA/main.py" "/Users/dhahne/Development/ims-aws-utils/scripts/list_all_cf_stacks.sh" "/Users/dhahne/Development/rosalind/run_module.sh" "/Users/dhahne/Development/rosalind/fetch_data.sh" "/Users/dhahne/Development/rosalind/modules/LCSM/__main__.py" "~/Development/rosalind/run_module.py" "~/Development/rosalind/run_module.sh" "/Users/dhahne/Development/rosalind/utils/logging_utils.py" "/Users/dhahne/Development/rosalind/LCSM/__main__.py" "/Users/dhahne/Development/ClimateMonitor/pianoclimate/README.md" "/Users/dhahne/Development/rosalind/README.md" "/Users/dhahne/Development/rosalind/utils/upload_answer.js" "/Users/dhahne/Development/rosalind/utils/fetch_dataset.js" "~/Development/rosalind/utils/test_casperjs.js" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data.py" "~/Development/rosalind/utils/logging_utils.py" "~/Development/rosalind/utils/logging_utils" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data.py" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data_lambda.py" "~/Development/rosalind/utils/rosalind_api_utils.py" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data.py" "/Users/dhahne/Development/rosalind/LCSM/output" "/Volumes/lit/.gitignore" "/Volumes/lit/some_scenes/some_scene" "/Volumes/lit/some_scene" "/Users/dhahne/Development/rosalind/LCSM/rosalind_lcsm.txt" "/Users/dhahne/Development/pianoclimate/xively_tutorial/DHT_reader_noprint" "/Users/dhahne/Development/pianoclimate/xively_tutorial/Adafruit_DHT.py" "/Users/dhahne/Development/pianoclimate/xively_tutorial/Adafruit_DHT_tutorial" "/Users/dhahne/Development/pianoclimate/xively.tar" "/Users/dhahne/Development/rosalind/LCSM/rosalind_lcsm.txt" "/Users/dhahne/.bash_profile" "/Users/dhahne/Development/rosalind/LCSM/__main__.py" "/Volumes/Storage/Google Drive/RC/FFS/meeting_minutes.markdown" "/Users/dhahne/Development/rosalind/LCSM/main.py" "/Users/dhahne/Development/rosalind/LCSM/output" "/Users/dhahne/Development/rosalind/LCSM/sample_data" "/Users/dhahne/.bash_profile" "/Users/dhahne/Development/rosalind/done/ORF/main.py" "/Users/dhahne/Development/rosalind/utils/codon_table" "/Users/dhahne/Development/rosalind/utils/utils.py" "/Users/dhahne/Development/rosalind/SPLC/sample_data" "/Users/dhahne/Development/rosalind/SPLC/output" "/Users/dhahne/Development/rosalind/SPLC/main.py" "/Users/dhahne/Development/rosalind/done/REVC/main.py" "/Users/dhahne/Development/rosalind/ORF/output" "/Users/dhahne/Development/rosalind/done/PROT/main.py" "/Users/dhahne/Development/rosalind/done/revc/main.py" "/Users/dhahne/Development/rosalind/done/PROT/main.py" "/Users/dhahne/Development/rosalind/done/MRNA/main.py" "/Users/dhahne/Development/rosalind/done/IPRB/main.py" "/Users/dhahne/Development/rosalind/done/IEV/main.py" "/Users/dhahne/Development/rosalind/done/HAMM/main.py" "/Users/dhahne/Development/rosalind/done/GRPH/main.py" "/Users/dhahne/Development/rosalind/done/DNA/main.py" "/Users/dhahne/Development/rosalind/done/DNA/counter.py" "/Users/dhahne/Development/rosalind/done/CONS/main.py" "/Users/dhahne/Development/rosalind/done/GC/main.py" "/Users/dhahne/Development/rosalind/utils/MPRT/main.py" "/Users/dhahne/Development/rosalind/utils/utils.py" "/Users/dhahne/Development/rosalind/ORF/main.py" "/Users/dhahne/Development/rosalind/utils/codon_table" "/Users/dhahne/Development/rosalind/ORF/main.py" "/Users/dhahne/Development/rosalind/ORF/sample_data" "/Users/dhahne/Development/rosalind/CONS/sample_data" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/subscriber/subscriber.py" "/Users/dhahne/Development/rosalind/CONS/output" "/Users/dhahne/Development/rosalind/CONS/sample_data" "/Users/dhahne/Development/rosalind/CONS/main.py" "/Users/dhahne/Development/rosalind/MPRT/main.py" "/Volumes/Storage/dmgs/python-pkgs/expiringdict/expiringdict/__init__.py" "/Users/dhahne/Development/FFS/source/trunk/provisioning/ffs-application.yml" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/landed_reporter/landed_reporter.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/customer_filter/customer_filter.py" "/Users/dhahne/Development/FFS/source/trunk/etc/pipeline/settings.dev" "/Users/dhahne/.emacs" "/Users/dhahne/Development/FFS/source/trunk/lib/python/ffs/formats.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/landed_reporter/landed_reporter.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/devtools/scope_sub_connect.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/subscriber/subscriber.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/storer/storer" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/storer/storer.py" "/Users/dhahne/.ssh/config" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/fr24/fr24_feed_client.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/subscriber/subscriber.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/storer/storer.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/fr24/fr24.py" "/Users/dhahne/Development/rosalind/MPRT/rosalind_mprt.txt" "/Users/dhahne/Development/rosalind/MPRT/output"))
+(setq file-name-history '("/Users/dhahne/Development/rosalind/scripts/run_module.py" "/Users/dhahne/Development/rosalind/rosalind_utils/utils.py" "/Users/dhahne/Development/rosalind/modules/PROT/__init__.py" "/Users/dhahne/Development/rosalind/scripts/upload_output.sh" "/Users/dhahne/Development/rosalind/scripts/run_module.sh" "/Users/dhahne/Development/rosalind/scripts/fetch_data.sh" "/Users/dhahne/Development/rosalind/utils/utils.py" "/Users/dhahne/Development/rosalind/modules/PROT/__init__.py" "/Users/dhahne/Development/rosalind/modules/IPRB/__init__.py" "/Users/dhahne/Development/rosalind/modules/HAMM/__init__.py" "/Users/dhahne/Development/rosalind/modules/GC/__init__.py" "/Users/dhahne/Development/rosalind/modules/FIB/__init__.py" "/Users/dhahne/Development/rosalind/modules/done/FIB/main.py" "/Users/dhahne/Development/rosalind/modules/REVC/__init__.py" "~/Development/rosalind/utils/set_rosalind_api_parameters.sh" "/Users/dhahne/Development/rosalind/modules/RNA/__init__.py" "~/Development/rosalind/upload_output.sh" "/Users/dhahne/Development/sandbox/sandboxenv3/lib/python3.5/site-packages/awscli/__init__.py" "/Users/dhahne/Development/rosalind/modules/DNA/__init__.py" "/Users/dhahne/Development/rosalind/modules/DNA/main.py" "/Users/dhahne/Development/ims-aws-utils/scripts/list_all_cf_stacks.sh" "/Users/dhahne/Development/rosalind/run_module.sh" "/Users/dhahne/Development/rosalind/fetch_data.sh" "/Users/dhahne/Development/rosalind/modules/LCSM/__main__.py" "~/Development/rosalind/run_module.py" "~/Development/rosalind/run_module.sh" "/Users/dhahne/Development/rosalind/utils/logging_utils.py" "/Users/dhahne/Development/rosalind/LCSM/__main__.py" "/Users/dhahne/Development/ClimateMonitor/pianoclimate/README.md" "/Users/dhahne/Development/rosalind/README.md" "/Users/dhahne/Development/rosalind/utils/upload_answer.js" "/Users/dhahne/Development/rosalind/utils/fetch_dataset.js" "~/Development/rosalind/utils/test_casperjs.js" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data.py" "~/Development/rosalind/utils/logging_utils.py" "~/Development/rosalind/utils/logging_utils" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data.py" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data_lambda.py" "~/Development/rosalind/utils/rosalind_api_utils.py" "/Users/dhahne/Development/ims-navdata/navdata-worker/eb_source/navtech/fetch_navtech_cycle_data.py" "/Users/dhahne/Development/rosalind/LCSM/output" "/Volumes/lit/.gitignore" "/Volumes/lit/some_scenes/some_scene" "/Volumes/lit/some_scene" "/Users/dhahne/Development/rosalind/LCSM/rosalind_lcsm.txt" "/Users/dhahne/Development/pianoclimate/xively_tutorial/DHT_reader_noprint" "/Users/dhahne/Development/pianoclimate/xively_tutorial/Adafruit_DHT.py" "/Users/dhahne/Development/pianoclimate/xively_tutorial/Adafruit_DHT_tutorial" "/Users/dhahne/Development/pianoclimate/xively.tar" "/Users/dhahne/Development/rosalind/LCSM/rosalind_lcsm.txt" "/Users/dhahne/.bash_profile" "/Users/dhahne/Development/rosalind/LCSM/__main__.py" "/Volumes/Storage/Google Drive/RC/FFS/meeting_minutes.markdown" "/Users/dhahne/Development/rosalind/LCSM/main.py" "/Users/dhahne/Development/rosalind/LCSM/output" "/Users/dhahne/Development/rosalind/LCSM/sample_data" "/Users/dhahne/.bash_profile" "/Users/dhahne/Development/rosalind/done/ORF/main.py" "/Users/dhahne/Development/rosalind/utils/codon_table" "/Users/dhahne/Development/rosalind/utils/utils.py" "/Users/dhahne/Development/rosalind/SPLC/sample_data" "/Users/dhahne/Development/rosalind/SPLC/output" "/Users/dhahne/Development/rosalind/SPLC/main.py" "/Users/dhahne/Development/rosalind/done/REVC/main.py" "/Users/dhahne/Development/rosalind/ORF/output" "/Users/dhahne/Development/rosalind/done/PROT/main.py" "/Users/dhahne/Development/rosalind/done/revc/main.py" "/Users/dhahne/Development/rosalind/done/PROT/main.py" "/Users/dhahne/Development/rosalind/done/MRNA/main.py" "/Users/dhahne/Development/rosalind/done/IPRB/main.py" "/Users/dhahne/Development/rosalind/done/IEV/main.py" "/Users/dhahne/Development/rosalind/done/HAMM/main.py" "/Users/dhahne/Development/rosalind/done/GRPH/main.py" "/Users/dhahne/Development/rosalind/done/DNA/main.py" "/Users/dhahne/Development/rosalind/done/DNA/counter.py" "/Users/dhahne/Development/rosalind/done/CONS/main.py" "/Users/dhahne/Development/rosalind/done/GC/main.py" "/Users/dhahne/Development/rosalind/utils/MPRT/main.py" "/Users/dhahne/Development/rosalind/utils/utils.py" "/Users/dhahne/Development/rosalind/ORF/main.py" "/Users/dhahne/Development/rosalind/utils/codon_table" "/Users/dhahne/Development/rosalind/ORF/main.py" "/Users/dhahne/Development/rosalind/ORF/sample_data" "/Users/dhahne/Development/rosalind/CONS/sample_data" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/subscriber/subscriber.py" "/Users/dhahne/Development/rosalind/CONS/output" "/Users/dhahne/Development/rosalind/CONS/sample_data" "/Users/dhahne/Development/rosalind/CONS/main.py" "/Users/dhahne/Development/rosalind/MPRT/main.py" "/Volumes/Storage/dmgs/python-pkgs/expiringdict/expiringdict/__init__.py" "/Users/dhahne/Development/FFS/source/trunk/provisioning/ffs-application.yml" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/landed_reporter/landed_reporter.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/customer_filter/customer_filter.py" "/Users/dhahne/Development/FFS/source/trunk/etc/pipeline/settings.dev" "/Users/dhahne/.emacs" "/Users/dhahne/Development/FFS/source/trunk/lib/python/ffs/formats.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/landed_reporter/landed_reporter.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/devtools/scope_sub_connect.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/subscriber/subscriber.py" "/Users/dhahne/Development/FFS/source/trunk/src/pipeline/storer/storer"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
-  "/Users/dhahne/Development/rosalind/modules/IPRB/__init__.py"
-  "__init__.py"
-  'python-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  1482
-  '(1451 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-create-buffer 206
-  "/Users/dhahne/Development/rosalind/upload_output.sh"
+  "/Users/dhahne/Development/rosalind/scripts/upload_output.sh"
   "upload_output.sh"
   'sh-mode
   '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  86
-  '(217 nil)
+  1
+  '(142 nil)
   nil
   nil
-  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
+  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
 
 (desktop-create-buffer 206
-  "/Users/dhahne/Development/rosalind/run_module.py"
-  "run_module.py"
-  'python-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  480
-  '(749 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-create-buffer 206
-  "/Users/dhahne/Development/rosalind/run_module.sh"
-  "run_module.sh"
-  'sh-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  74
-  '(247 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/fetch_data.sh"
+  "/Users/dhahne/Development/rosalind/scripts/fetch_data.sh"
   "fetch_data.sh"
   'sh-mode
   '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  180
-  '(119 nil)
+  346
+  '(348 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
 
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/modules/DNA/__init__.py"
+(desktop-create-buffer 206
+  "/Users/dhahne/Development/rosalind/modules/PROT/__init__.py"
   "__init__.py"
   'python-mode
   '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  325
-  '(628 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/upload_answer.js"
-  "upload_answer.js"
-  'js-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode buffer-face-mode)
-  372
-  '(918 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/ims-aws-utils/scripts/list_all_cf_stacks.sh"
-  "list_all_cf_stacks.sh"
-  'sh-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  1153
-  '(586 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/sandbox/sandboxenv3/lib/python3.5/site-packages/awscli/__init__.py"
-  "__init__.py"
-  'python-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  582
-  '(nil nil)
+  1223
+  '(1177 nil)
   nil
   nil
   '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
 
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/modules/LCSM/__main__.py"
-  "__main__.py"
-  'python-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  455
-  '(2383 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/modules/DNA/main.py"
-  "main.py"
-  'python-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  524
-  '(524 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/fetch_dataset.js"
-  "fetch_dataset.js"
-  'js-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode buffer-face-mode)
-  724
-  '(991 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/logging_utils.py"
-  "logging_utils.py"
-  'python-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  604
-  '(1 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/codon_table"
-  "codon_table"
-  'fundamental-mode
-  '(smooth-scroll-mode global-auto-revert-mode)
-  192
-  '(114 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/README.md"
-  "README.md"
-  'markdown-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  77
-  '(53 nil)
-  nil
-  nil
-  '((tab-width . 4) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/ClimateMonitor/pianoclimate/README.md"
-  "README.md"
-  'markdown-mode
-  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  1
-  '(nil nil)
-  nil
-  nil
-  '((tab-width . 4) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/LCSM/sample_data"
-  "sample_data"
-  'fundamental-mode
-  '(smooth-scroll-mode global-auto-revert-mode)
-  58
-  '(58 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/utils/utils.py"
+(desktop-create-buffer 206
+  "/Users/dhahne/Development/rosalind/rosalind_utils/utils.py"
   "utils.py"
   'python-mode
-  '(auto-complete-mode smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  7541
-  '(512 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . utf-8-unix) (truncate-lines . t)))
-
-(desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/LCSM/rosalind_lcsm.txt"
-  "rosalind_lcsm.txt"
-  'text-mode
   '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
-  468
-  '(1 nil)
+  3514
+  '(2862 nil)
   nil
   nil
-  '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
 
 (desktop-append-buffer-args 206
-  "/Users/dhahne/Development/rosalind/LCSM/output"
-  "output"
-  'fundamental-mode
-  '(smooth-scroll-mode global-auto-revert-mode)
-  6
-  '(6 nil)
+  "/Users/dhahne/Development/rosalind/scripts/run_module.py"
+  "run_module.py"
+  'python-mode
+  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
+  32
+  '(nil nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
+
+(desktop-append-buffer-args 206
+  "/Users/dhahne/Development/rosalind/scripts/run_module.sh"
+  "run_module.sh"
+  'sh-mode
+  '(smooth-scroll-mode global-auto-revert-mode flyspell-mode)
+  253
+  '(132 nil)
   nil
   nil
   '((buffer-file-coding-system . undecided-unix) (truncate-lines . t)))
