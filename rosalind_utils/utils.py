@@ -35,7 +35,11 @@ def ifasta_file(fasta_fd, with_headers=True):
 
     Introduced for GC
     """
-    fh = open(fasta_fd)
+    if isinstance(fasta_fd, str):
+        fh = open(fasta_fd)
+    else:
+        fh = fasta_fd
+        
     # ditch the boolean (x[0]) and just keep the header or sequence since
     # we know they alternate.
     faiter = (x[1] for x in groupby(fh, lambda line: line[0] == ">"))
